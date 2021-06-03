@@ -10,7 +10,7 @@
 </head>
 <body>
 <script>
-    window.location.href = './jinhyun_bohee.html';
+    window.location.href = './jh_bh.html';
 </script>
 </body>
 </html>
