@@ -2681,8 +2681,9 @@
                                                                                                             class="wpb_raw_code wpb_content_element wpb_raw_html">
                                                                                                             <div
                                                                                                                 class="wpb_wrapper">
-                                                                                                                <img
-                                                                                                                    src="./images/map1-2.png" />
+                                                                                                                <a href="javascript: shareNavi();">
+                                                                                                                    <img src="./images/map1-2.png" />
+                                                                                                                </a>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
@@ -3001,6 +3002,20 @@
         $(window).load(function () {
             $('body').sakura();
         });
+    </script>
+    <script>
+      
+        //<![CDATA[
+        function shareNavi() {
+            Kakao.Navi.start({
+                name: "월드행복비전교회",
+                x: 127.11083446562024,
+                y: 37.349305828114325,
+                coordType: 'wgs84'
+            });
+        }
+        //]]>
+
     </script>
     <script type='text/javascript' src='./wp-includes/js/mediaelement/wp-mediaelement.min.js'></script>
     <script type='text/javascript' src='./wp-content/themes/hwk/library/js/plugins.js'></script>
