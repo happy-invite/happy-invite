@@ -47,6 +47,7 @@
     <script type='text/javascript' src='./wp-includes/js/jquery/jquery.js'></script>
     <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js'></script>
     <script src="./wp-includes/js/jquery/jquery-sakura.min.js"></script>
+    <script src="./wp-includes/js/jquery/jquery.rwdImageMaps.min.js"></script>
 
 
     <script type='text/javascript'>
@@ -1805,8 +1806,8 @@
                                                                                                     <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                                                                                         <div class="wpb_wrapper">
                                                                                                             <img src="./images/contact.png" width="1100" height="343" orgwidth="1100" orgheight="343"
-                                                                                                                usemap="#map-intro-c" alt="">
-                                                                                                            <map name="map-intro-c">
+                                                                                                                usemap="#map-contact-p" alt="">
+                                                                                                            <map name="map-contact-p">
                                                                                                                 <area href="tel:010-7338-2112" shape="rect" coords="120,88,465,178" alt="신랑 아버지 김호동 연락처"
                                                                                                                     style="outline:none;" target="_blank">
                                                                                                                 <area href="tel:010-3967-2772" shape="rect" coords="120,198,465,288" alt="신랑 어머니 구경희 연락처" style="outline:none;"
@@ -3024,6 +3025,10 @@
     <script>
         $(window).load(function () {
             $('body').sakura();
+        });
+        $(function () {
+            $('img[usemap="#map-contact-p"]').rwdImageMaps();
+            $("#img").width("100%");
         });
     </script>
     <script type='text/javascript' src='./wp-includes/js/mediaelement/wp-mediaelement.min.js'></script>
